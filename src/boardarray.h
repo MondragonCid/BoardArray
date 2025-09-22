@@ -21,7 +21,7 @@ class BoardArray : public Board {
             while (count < index && entry->compare(&array[count]))
                 count++;
             if (index == SIZE && count == SIZE) {
-                cout << entry->name << "The score is too low to be added!" << endl;
+                cout << entry->name << "'s score is too low to be added!" << endl;
                 return;
             }
             if (index < SIZE)
