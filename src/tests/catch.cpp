@@ -9541,7 +9541,7 @@ void ConsoleReporter::benchmarkPreparing( StringRef name ) {
 }
 
 void ConsoleReporter::benchmarkStarting(BenchmarkInfo const& info) {
-    (*m_tablePrinter) << info.samples << ColumnBreak()
+(*m_tablePrinter) << info.samples << ColumnBreak()
         << info.iterations << ColumnBreak();
     if ( !m_config->benchmarkNoAnalysis() ) {
         ( *m_tablePrinter )
